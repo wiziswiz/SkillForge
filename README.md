@@ -6,18 +6,29 @@ SkillForge is a meta-skill that makes you better at creating skills. It synthesi
 
 ## Install
 
-Copy the `skillforge` folder to your Claude Code skills directory:
+SkillForge is universal — same files work in Claude Code, OpenClaw, Codex, Cursor, and any agent that reads SKILL.md.
 
+### Claude Code
 ```bash
-# Clone and copy
-git clone https://github.com/wiziswiz/SkillForge.git
-cp -r SkillForge ~/.claude/skills/skillforge
+git clone https://github.com/wiziswiz/SkillForge.git ~/.claude/skills/skillforge
 ```
 
-Or symlink it:
+### OpenClaw
+```bash
+git clone https://github.com/wiziswiz/SkillForge.git ~/.openclaw/skills/skillforge
+```
+
+### Codex / Cursor / Other
+```bash
+git clone https://github.com/wiziswiz/SkillForge.git
+# Point your agent's skill directory to the cloned folder
+```
+
+Or symlink if you want to keep it separate:
 ```bash
 git clone https://github.com/wiziswiz/SkillForge.git ~/Projects/SkillForge
-ln -s ~/Projects/SkillForge ~/.claude/skills/skillforge
+ln -s ~/Projects/SkillForge ~/.claude/skills/skillforge    # Claude Code
+ln -s ~/Projects/SkillForge ~/.openclaw/skills/skillforge  # OpenClaw
 ```
 
 ## Commands

@@ -1,10 +1,13 @@
 ---
 name: skillforge
 description: >
-  Build, audit, and improve Claude Code skills with expert-level craft.
+  Build, audit, and improve AI coding agent skills with expert-level craft.
+  Works with Claude Code, OpenClaw, Codex, Cursor, and any agent that reads SKILL.md files.
   Triggers when: creating new skills, auditing existing skills, improving skill quality,
   writing SKILL.md files, structuring skill folders, debugging why a skill undertriggers
-  or produces generic output, or when the user says /skillforge.
+  or produces generic output, reviewing skill architecture, or when the user says /skillforge.
+  Also triggers on: "create a skill", "audit this skill", "improve this skill", "why isn't my skill working",
+  "skill not triggering", "make a skill for", "build a skill".
   Based on Anthropic's internal lessons, the official guide, and battle-tested community patterns.
 argument-hint: "[command] [target] -- e.g., /skillforge create frontend-linter, /skillforge audit my-skill"
 ---
